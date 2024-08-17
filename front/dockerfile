@@ -1,0 +1,11 @@
+FROM debian:bookworm-slim as builder
+
+RUN <<EOF
+apt update 
+apt install -y curl unzip
+curl -fsSL https://bun.sh/install | bash
+EOF
+
+FROM debian:bookworm-slim
+COPY --from=builder /root/.bun/bin/bun /root/.bun/bin/
+ENV PATH=/root/.bun/bin:$PATH

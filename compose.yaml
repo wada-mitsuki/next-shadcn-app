@@ -1,0 +1,12 @@
+services:
+  web:
+    build: 
+      context: ./front
+      dockerfile: dockerfile
+    container_name: react-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front/webapp:/webapp
+    working_dir: /webapp
+    tty: true
