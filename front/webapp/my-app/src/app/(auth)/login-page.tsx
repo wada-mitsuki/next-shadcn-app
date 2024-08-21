@@ -4,7 +4,7 @@ import { Button } from '@/components/shadcn-ui/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function loginPage() {
+export default function LoginPage() {
   return (
     <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
       <div className="flex items-center justify-center py-12">

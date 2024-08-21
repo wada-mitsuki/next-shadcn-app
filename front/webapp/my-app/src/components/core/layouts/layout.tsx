@@ -1,10 +1,11 @@
-import { Header } from '@/components/core/header';
+import { Header } from '@/components/core/header/header';
 import { Sidebar } from '@/components/core/sidebar/sidebar';
 
 interface LayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 
+// PJに沿ったレイアウト
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="flex min-h-screen w-full">

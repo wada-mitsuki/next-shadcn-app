@@ -6,7 +6,7 @@ Next.js × Shadcn-ui のボイラープレート
 
 - [使用技術について](#technology-used)
 - [環境構築手順](#environment-construction-rocedure)
-- [npm コマンドについて](#about-npm-command)
+- [bun コマンドについて](#about-npm-command)
 - [Git での運用について](#about-git-flow)
 
 <h2 id="technology-used">使用技術について</h2>
@@ -98,4 +98,6 @@ $ bun install
 
 # ローカル環境の立ち上げ
 $ bun run dev
+or
+$ bun dev
 ```
